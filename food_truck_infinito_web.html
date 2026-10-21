@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#e5232f">
+<meta name="description" content="Food Truck Infinito: franquicias inclusivas para que jóvenes neurodivergentes sean protagonistas de su propio negocio.">
+<title>Food Truck Infinito | Trabajo digno, oportunidades reales</title>
+<style>
+:root{--red:#e5232f;--yellow:#ffd52a;--ink:#202124;--muted:#5d626a;--cream:#fffaf0;--white:#fff;--green:#187b55}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--ink);line-height:1.6;background:#fff}
+a{color:inherit}.wrap{width:min(1120px,calc(100% - 40px));margin:auto}
+header{position:sticky;top:0;z-index:10;background:#ffffffed;backdrop-filter:blur(10px);border-bottom:1px solid #eee}
+.nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{display:flex;align-items:center;gap:12px;text-decoration:none;font-weight:900;letter-spacing:-.6px}.logo{width:48px;height:48px;border-radius:14px;background:var(--yellow);display:grid;place-items:center;font-size:27px;border:3px solid var(--ink)}.brand span{display:block;line-height:1.1}.brand small{display:block;font-size:11px;letter-spacing:1.8px;color:var(--red);margin-top:4px}
+nav{display:flex;align-items:center;gap:22px}nav a{text-decoration:none;font-weight:700;font-size:14px}nav a:hover{color:var(--red)}.nav-cta,.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--red);color:white;text-decoration:none;border:0;border-radius:999px;padding:13px 20px;font-weight:800;cursor:pointer}.nav-cta{padding:10px 16px;font-size:14px}
+.hero{background:var(--yellow);position:relative;overflow:hidden;padding:78px 0 72px}.hero:after{content:"∞";position:absolute;font-size:440px;font-weight:900;line-height:1;color:#ffffff36;right:-5px;top:-120px;pointer-events:none}.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center;position:relative;z-index:1}.eyebrow{font-size:13px;letter-spacing:1.8px;text-transform:uppercase;font-weight:900;color:var(--red)}h1{font-size:clamp(42px,6vw,72px);line-height:.99;letter-spacing:-3px;margin:16px 0 24px;max-width:700px}h1 em{font-style:normal;color:var(--red)}.hero p{font-size:19px;max-width:600px;margin:0 0 28px}.actions{display:flex;flex-wrap:wrap;gap:12px}.btn.light{background:white;color:var(--ink)}.hero-art{min-height:330px;display:grid;place-items:center;position:relative}.truck{width:min(100%,390px);height:230px;position:relative;transform:rotate(-2deg)}.truck-top{position:absolute;top:18px;left:24px;width:300px;height:120px;background:white;border:5px solid var(--ink);border-radius:18px 18px 8px 8px;display:flex;flex-direction:column;align-items:center;justify-content:center;box-shadow:8px 8px 0 #20212422}.truck-top strong{font-size:30px;letter-spacing:-1.5px}.truck-top span{font-weight:900;color:var(--red);font-size:13px;letter-spacing:2px}.truck-window{position:absolute;right:17px;top:35px;width:72px;height:52px;border:4px solid var(--ink);border-radius:8px;background:#bce9f6}.truck-base{position:absolute;left:10px;top:135px;width:350px;height:55px;border:5px solid var(--ink);border-radius:7px 7px 16px 16px;background:var(--red)}.wheel{position:absolute;top:172px;width:52px;height:52px;border:5px solid var(--ink);border-radius:50%;background:#45484c}.wheel:after{content:"";position:absolute;inset:12px;border-radius:50%;background:#ddd}.w1{left:55px}.w2{right:48px}.spark{position:absolute;background:var(--red);color:white;border:3px solid var(--ink);padding:10px 15px;border-radius:16px;font-weight:900;transform:rotate(8deg);right:0;bottom:8px}
+section{padding:82px 0}.section-head{max-width:720px;margin-bottom:38px}.kicker{font-size:12px;letter-spacing:1.8px;text-transform:uppercase;color:var(--red);font-weight:900}h2{font-size:clamp(32px,4vw,48px);line-height:1.08;letter-spacing:-1.6px;margin:10px 0 16px}h3{font-size:22px;line-height:1.2;margin:12px 0}.lead{font-size:18px;color:var(--muted);margin:0}.origin{background:var(--cream)}.origin-grid{display:grid;grid-template-columns:1fr 1fr;gap:42px;align-items:start}.quote{border-left:6px solid var(--yellow);padding:8px 0 8px 24px;font-size:21px;font-weight:750}.quote small{display:block;margin-top:15px;font-size:14px;color:var(--muted);font-weight:600}.pill{display:inline-block;background:#fff0b0;padding:5px 11px;border-radius:999px;font-size:12px;font-weight:900;text-transform:uppercase;letter-spacing:.8px}.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{border:1px solid #e8e8e8;border-radius:22px;padding:25px;background:white;box-shadow:0 8px 28px #17171708}.num{width:44px;height:44px;border-radius:14px;background:var(--yellow);display:grid;place-items:center;font-size:21px;font-weight:950}.card p{color:var(--muted);margin-bottom:0}.model{background:var(--ink);color:white}.model .lead{color:#d2d4d7}.model-grid{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:center}.model-list{display:grid;gap:14px}.model-item{display:flex;gap:14px;align-items:flex-start;background:#ffffff0d;border:1px solid #ffffff1a;padding:17px;border-radius:16px}.check{flex:0 0 28px;width:28px;height:28px;border-radius:50%;display:grid;place-items:center;background:var(--yellow);color:var(--ink);font-weight:900}.model-item p{margin:3px 0 0;color:#d2d4d7}.model-item strong{font-size:17px}.benefits{background:#fff}.benefit-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}.benefit-card{border-radius:24px;padding:30px;background:#fff5c9}.benefit-card.parents{background:#f5f5f5}.benefit-card .emoji{font-size:34px}.benefit-card ul{padding-left:20px;margin-bottom:0}.benefit-card li{margin:10px 0}.local{background:#f8f8f8}.local-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.local-card{padding:23px;border-radius:20px;background:white;border:1px solid #e7e7e7}.local-card .symbol{font-size:26px}.cta-band{background:var(--red);color:white;padding:55px 0}.cta-row{display:flex;justify-content:space-between;align-items:center;gap:28px}.cta-band h2{margin:0 0 10px}.cta-band p{margin:0;max-width:700px;color:#ffe9e9}.cta-band .btn{background:var(--yellow);color:var(--ink);white-space:nowrap}.contact{background:var(--cream)}.contact-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:40px}.contact-links{display:grid;gap:12px;margin-top:24px}.contact-link{display:flex;align-items:center;gap:12px;text-decoration:none;font-weight:800;background:white;border:1px solid #eee;border-radius:14px;padding:14px}.contact-link span:first-child{font-size:22px}.form{background:white;border:1px solid #e8e8e8;padding:26px;border-radius:22px;display:grid;gap:14px}.form-row{display:grid;grid-template-columns:1fr 1fr;gap:12px}label{display:grid;gap:6px;font-weight:750;font-size:14px}input,select,textarea{width:100%;padding:13px 14px;border:1px solid #d7d7d7;border-radius:10px;font:inherit;background:#fff}textarea{min-height:115px;resize:vertical}.form-note{font-size:12px;color:var(--muted);margin:0}footer{background:#191a1d;color:#d7d7d7;padding:28px 0;font-size:13px}.footer-row{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}.footer-brand{color:white;font-weight:900}
+@media(max-width:800px){nav a:not(.nav-cta){display:none}.hero{padding:56px 0}.hero-grid,.origin-grid,.model-grid,.contact-grid{grid-template-columns:1fr}.hero-art{min-height:260px}.truck{transform:scale(.85) rotate(-2deg)}.steps,.local-grid{grid-template-columns:1fr}.benefit-grid{grid-template-columns:1fr}.cta-row{align-items:flex-start;flex-direction:column}.form-row{grid-template-columns:1fr}section{padding:62px 0}h1{letter-spacing:-2px}.hero:after{font-size:280px;top:-40px}}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#inicio" aria-label="Food Truck Infinito, inicio"><div class="logo">∞</div><span>FOOD TRUCK INFINITO<small>OPORTUNIDADES REALES</small></span></a>
+    <nav aria-label="Navegación principal">
+      <a href="#historia">Nuestra historia</a><a href="#objetivos">Objetivos</a><a href="#beneficios">Beneficios</a><a href="#contacto" class="nav-cta">Quiero saber más ↗</a>
+    </nav>
+  </div>
+</header>
+<main>
+<section class="hero" id="inicio">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="eyebrow">Una franquicia con propósito</div>
+      <h1>El talento no tiene límites. <em>Las oportunidades, sí pueden.</em></h1>
+      <p>Food Truck Infinito impulsa un modelo de trabajo inclusivo para que jóvenes neurodivergentes puedan aprender, trabajar, generar ingresos y ser protagonistas de su propio negocio.</p>
+      <div class="actions"><a class="btn" href="#contacto">Quiero llevarlo a mi ciudad ↗</a><a class="btn light" href="#historia">Conocé nuestra historia</a></div>
+    </div>
+    <div class="hero-art" aria-label="Ilustración de un food truck rojo y amarillo">
+      <div class="truck">
+        <div class="truck-top"><strong>FOOD TRUCK</strong><span>INFINITO</span><div class="truck-window"></div></div>
+        <div class="truck-base"></div><div class="wheel w1"></div><div class="wheel w2"></div>
+      </div>
+      <div class="spark">¡INCLUSIÓN EN ACCIÓN!</div>
+    </div>
+  </div>
+</section>
+<section class="origin" id="historia">
+ <div class="wrap origin-grid">
+  <div>
+   <div class="kicker">Cómo nace Food Truck Infinito</div>
+   <h2>Nació de una historia familiar. Y se convirtió en un propósito.</h2>
+   <p class="lead">Soy Fabián Sánchez Rojas, empresario y papá de Ramiro y Florencia, mis dos hijos autistas. Ellos son mi motivo, mi norte y mi propósito de vida.</p>
+   <p>Con años de experiencia emprendedora y el deseo de construir un futuro con oportunidades reales, nació Food Truck Infinito: una propuesta que une trabajo, autonomía e inclusión a través de un negocio gastronómico concreto.</p>
+   <p>No se trata solamente de dar visibilidad. Se trata de abrir puertas para que los jóvenes puedan participar, desarrollar habilidades, generar ingresos y ocupar un lugar activo en su comunidad.</p>
+  </div>
+  <div>
+   <div class="quote">“No quiero que los jóvenes neurodivergentes sean solamente espectadores. Quiero que sean protagonistas y dueños de su propio negocio.”<small>Fabián Sánchez Rojas · Fundador de Food Truck Infinito</small></div>
+   <p style="margin-top:26px">El proyecto está pensado para crecer en distintas ciudades, junto a familias, emprendedores, instituciones y comunidades que quieran transformar la inclusión en oportunidades concretas.</p>
+   <span class="pill">Trabajo digno · Autonomía · Protagonismo</span>
+  </div>
+ </div>
+</section>
+<section id="objetivos">
+ <div class="wrap">
+  <div class="section-head"><div class="kicker">Nuestro propósito</div><h2>Tres objetivos que mueven todo.</h2><p class="lead">Cada Food Truck Infinito busca generar un impacto que vaya mucho más allá de vender un producto.</p></div>
+  <div class="steps">
+   <article class="card"><div class="num">1</div><h3>Crear trabajo digno y autonomía</h3><p>Generar oportunidades laborales reales para jóvenes neurodivergentes, con participación activa, desarrollo de habilidades e independencia económica.</p></article>
+   <article class="card"><div class="num">2</div><h3>Visibilizar la neurodivergencia</h3><p>Mostrar capacidades, talentos y distintas formas de aprender y trabajar. Cambiar prejuicios a través de experiencias cotidianas y compartidas.</p></article>
+   <article class="card"><div class="num">3</div><h3>Contagiar a otros emprendedores</h3><p>Inspirar a empresarios, instituciones y comunidades para que creen más oportunidades inclusivas y repliquen el modelo en otros lugares.</p></article>
+  </div>
+ </div>
+</section>
+<section class="model">
+ <div class="wrap model-grid">
+  <div><div class="kicker" style="color:var(--yellow)">Un negocio con sentido</div><h2>Una franquicia que convierte la inclusión en acción.</h2><p class="lead">Food Truck Infinito combina una propuesta gastronómica con acompañamiento y una meta clara: que los jóvenes tengan un rol real dentro de la actividad económica.</p></div>
+  <div class="model-list">
+   <div class="model-item"><div class="check">✓</div><div><strong>Un equipo que participa</strong><p>El modelo contempla equipos de jóvenes que trabajan en el carro y asumen un papel protagonista, con apoyos ajustados a cada realidad.</p></div></div>
+   <div class="model-item"><div class="check">✓</div><div><strong>Acompañamiento y aprendizaje</strong><p>Se proyecta trabajo junto a profesionales y redes de apoyo —como psicología, psicopedagogía y terapia— según las necesidades de cada equipo.</p></div></div>
+   <div class="model-item"><div class="check">✓</div><div><strong>Un punto de encuentro en la ciudad</strong><p>Ferias, eventos y puntos de venta pueden acercar a la comunidad a una experiencia de inclusión concreta y cotidiana.</p></div></div>
+   <div class="model-item"><div class="check">✓</div><div><strong>Una oportunidad para replicar</strong><p>Familias, emprendedores, municipios e instituciones pueden conversar sobre cómo impulsar el modelo en su localidad.</p></div></div>
+  </div>
+ </div>
+</section>
+<section class="benefits" id="beneficios">
+ <div class="wrap">
+  <div class="section-head"><div class="kicker">El impacto en cada comunidad</div><h2>Cuando llega un Food Truck Infinito, ganamos todos.</h2><p class="lead">Los beneficios pueden variar según cada joven, familia y localidad. La propuesta busca construir oportunidades con apoyos y objetivos claros.</p></div>
+  <div class="benefit-grid">
+   <article class="benefit-card"><div class="emoji">🌟</div><h3>Para los jóvenes neurodivergentes</h3><ul><li><strong>Experiencia laboral concreta:</strong> participar en tareas reales de un emprendimiento gastronómico.</li><li><strong>Autonomía e independencia:</strong> desarrollar habilidades y avanzar hacia una mayor participación económica.</li><li><strong>Confianza y protagonismo:</strong> que su aporte sea visible, valorado y parte del equipo.</li><li><strong>Aprendizaje práctico:</strong> practicar comunicación, organización, atención al público y trabajo en equipo, de acuerdo con sus posibilidades y apoyos.</li><li><strong>Pertenencia:</strong> formar parte de la vida social y económica de su ciudad.</li></ul></article>
+   <article class="benefit-card parents"><div class="emoji">🤝</div><h3>Para madres, padres y familias</h3><ul><li><strong>Una posibilidad concreta para el futuro:</strong> explorar caminos laborales más allá de las opciones tradicionales.</li><li><strong>Ver capacidades en acción:</strong> reconocer avances, talentos e intereses en un entorno real.</li><li><strong>Construir una red:</strong> vincularse con otras familias, profesionales, emprendedores e instituciones.</li><li><strong>Planificar con más herramientas:</strong> conversar sobre habilidades, apoyos y metas de autonomía para cada joven.</li><li><strong>Una comunidad más inclusiva:</strong> ayudar a que la ciudad conozca, valore y acompañe la neurodiversidad.</li></ul></article>
+  </div>
+ </div>
+</section>
+<section class="local">
+ <div class="wrap">
+  <div class="section-head"><div class="kicker">Impacto local</div><h2>¿Qué puede significar para tu ciudad?</h2><p class="lead">Una franquicia puede convertirse en un proyecto compartido entre jóvenes, familias, comercios, instituciones y autoridades locales.</p></div>
+  <div class="local-grid">
+   <article class="local-card"><div class="symbol">🏙️</div><h3>Más inclusión visible</h3><p>Un espacio cotidiano donde la comunidad pueda conocer y valorar el aporte de jóvenes neurodivergentes.</p></article>
+   <article class="local-card"><div class="symbol">💼</div><h3>Emprendimiento y trabajo</h3><p>Una iniciativa productiva que abre conversaciones sobre empleo, formación y oportunidades económicas inclusivas.</p></article>
+   <article class="local-card"><div class="symbol">❤️</div><h3>Una comunidad comprometida</h3><p>Una oportunidad para sumar a familias, organizaciones, empresas, eventos y gobiernos locales alrededor de un objetivo común.</p></article>
+  </div>
+ </div>
+</section>
+<section class="cta-band">
+ <div class="wrap cta-row"><div><h2>¿Te gustaría que Food Truck Infinito llegue a tu ciudad?</h2><p>Si sos una familia, un emprendedor, una institución o representás a un municipio, conversemos. El primer paso es ponernos en contacto.</p></div><a class="btn" href="#contacto">Hablemos ↗</a></div>
+</section>
+<section class="contact" id="contacto">
+ <div class="wrap contact-grid">
+  <div><div class="kicker">Contacto</div><h2>Las oportunidades empiezan con una conversación.</h2><p class="lead">Contanos desde dónde nos escribís y qué te gustaría impulsar. Queremos conocer a las personas y comunidades interesadas en Food Truck Infinito.</p>
+   <div class="contact-links">
+    <a class="contact-link" href="https://wa.me/5493584200333?text=Hola%2C%20quiero%20recibir%20informaci%C3%B3n%20sobre%20Food%20Truck%20Infinito" target="_blank" rel="noopener"><span>💬</span><span>WhatsApp: +54 9 3584 200333</span></a>
+    <a class="contact-link" href="https://www.instagram.com/foodtruckinfinito/" target="_blank" rel="noopener"><span>📸</span><span>Instagram: Food Truck Infinito</span></a>
+   </div>
+  </div>
+  <form class="form" id="contactForm">
+   <div class="form-row"><label>Nombre y apellido<input name="nombre" required placeholder="¿Cómo te llamás?"></label><label>Ciudad / provincia<input name="ciudad" required placeholder="¿Desde dónde nos escribís?"></label></div>
+   <div class="form-row"><label>Correo electrónico<input type="email" name="email" placeholder="tu@email.com"></label><label>WhatsApp o teléfono<input name="telefono" placeholder="Tu número de contacto"></label></div>
+   <label>Me interesa…<select name="interes" required><option value="">Elegí una opción</option><option>Quiero una franquicia en mi ciudad</option><option>Soy madre, padre o familiar</option><option>Represento a una institución u organización</option><option>Represento a un municipio</option><option>Quiero colaborar o difundir el proyecto</option><option>Otra consulta</option></select></label>
+   <label>Mensaje<textarea name="mensaje" placeholder="Contanos brevemente tu idea o consulta…"></textarea></label>
+   <button class="btn" type="submit">Preparar mensaje por WhatsApp ↗</button>
+   <p class="form-note">Este formulario prepara un mensaje para enviar por WhatsApp; no almacena ni envía datos a un servidor.</p>
+  </form>
+ </div>
+</section>
+</main>
+<footer><div class="wrap footer-row"><div><span class="footer-brand">FOOD TRUCK INFINITO ∞</span><br>Trabajo digno, autonomía y oportunidades reales.</div><div>Un proyecto impulsado por Fabián Sánchez Rojas · Río Cuarto, Córdoba, Argentina</div><div>© <span id="year">2026</span> Food Truck Infinito</div></div></footer>
+<script>
+document.getElementById('contactForm').addEventListener('submit',function(e){
+ e.preventDefault();
+ const d=new FormData(this);
+ const parts=[
+ 'Hola, quiero contactarme por Food Truck Infinito.',
+ 'Nombre: '+(d.get('nombre')||''),
+ 'Ciudad/provincia: '+(d.get('ciudad')||''),
+ 'Email: '+(d.get('email')||'No informado'),
+ 'Teléfono: '+(d.get('telefono')||'No informado'),
+ 'Interés: '+(d.get('interes')||''),
+ 'Mensaje: '+(d.get('mensaje')||'Sin mensaje adicional')
+ ];
+ window.open('https://wa.me/5493584200333?text='+encodeURIComponent(parts.join('\n')),'_blank','noopener');
+});
+</script>
+</body>
+</html>
